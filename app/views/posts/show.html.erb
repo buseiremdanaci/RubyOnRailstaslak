@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ad:</strong>
+  <%= @post.ad %>
+</p>
+
+<p>
+  <strong>Soyad:</strong>
+  <%= @post.soyad %>
+</p>
+
+<p>
+  <strong>Yas:</strong>
+  <%= @post.yas %>
+</p>
+
+<p>
+  <strong>Yorum:</strong>
+  <%= @post.yorum %>
+</p>
+
+<%= link_to 'Güncelle', edit_post_path(@post) %> |
+<%= link_to 'Geri', posts_path %> |
+<%= link_to 'Sil', @post, :method => :delete, :confirm=>"Eminmisiniz" %>

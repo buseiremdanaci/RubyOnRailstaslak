@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1>VAKA ÇALIŞMASI BLOG TASARIMI</h1>
+<% @posts.each do |post| %>
+  <h2> <%= link_to post.yorum, post %></h2>
+  <p>
+  <p><%= time_ago_in_words post.created_at %> ago </p>
+  </p>
+  </hr>
+<% end %>
+<%= link_to 'Yeni Yorum Ekle', new_post_path %>
+
